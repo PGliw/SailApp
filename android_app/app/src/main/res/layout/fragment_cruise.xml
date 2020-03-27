@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.CruiseFragment"
+    android:columnCount="2"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:text="@string/lightness_level"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnWeight="1"
+        android:gravity="fill_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <TextView
+        android:id="@+id/text_lightness"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_lightness"
+        android:layout_columnSpan="2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:text="@string/acceleration"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"
+        android:gravity="fill_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <TextView
+        android:text="@string/x_axis"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <TextView
+        tools:text="2.121"
+        android:id="@+id/text_acc_x"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="1"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <TextView
+        android:text="@string/y_axis"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <TextView
+        tools:text="2.121"
+        android:id="@+id/text_acc_y"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="1"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <TextView
+        android:text="@string/z_axis"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <TextView
+        tools:text="2.121"
+        android:id="@+id/text_acc_z"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="1"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <Button
+        android:id="@+id/button_camera"
+        android:text="@string/take_a_photo"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="bottom|fill_horizontal"
+        android:layout_columnSpan="2">
+
+    </Button>
+
+
+</GridLayout>

@@ -48,6 +48,8 @@ class MainViewModel(
     private val sailAppApiService = SailAppApiService(connectivityInterceptor = ConnectivityInterceptorImpl(appContext))
     private val darkSkyApiService = DarkSkyApiService(connectivityInterceptor = ConnectivityInterceptorImpl(appContext))
 
+    var rentalToCancel: Rental? = null
+
     val user = MutableLiveData<User>()
     val upcomingRentals = MutableLiveData<List<Rental>>()
     val allRentals = MutableLiveData<List<Rental>>()
@@ -252,6 +254,7 @@ class MainViewModel(
                 else -> cancelStatus.postValue(CancelRentalStatus.CANCELLATION_FAILED)
             }
             isCancellationAllowed = false
+            rentalToCancel = null
         }
     }
 

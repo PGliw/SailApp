@@ -20,7 +20,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    dataBinding{
+    dataBinding {
         enabled true
     }
 
@@ -125,7 +125,7 @@ dependencies {
     implementation "com.google.android.material:material:1.0.0"
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
 
-    // Material time picker with intervals
+    // Material time picker with intervalsl
     implementation 'com.wdullaer:materialdatetimepicker:4.2.0'
 
     // Time manipulation
@@ -144,5 +144,8 @@ dependencies {
 
     // Horizontal number picker
     implementation 'com.shawnlin:number-picker:2.4.8'
+
+    // Slide to act
+    implementation 'com.ncorti:slidetoact:0.7.0'
 
 }

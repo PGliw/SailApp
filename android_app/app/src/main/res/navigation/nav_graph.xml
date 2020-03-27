@@ -4,7 +4,12 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
             app:startDestination="@id/destination_profile">
     <fragment android:id="@+id/destination_profile" android:name="com.pwr.sailapp.ui.main.ProfileFragment"
-              android:label="fragment_profile" tools:layout="@layout/fragment_profile"/>
+              android:label="fragment_profile" tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_destination_profile_to_telephonyFragment"
+            app:destination="@id/telephonyFragment"
+            app:popUpTo="@+id/destination_profile" />
+    </fragment>
     <fragment android:id="@+id/destination_rent_master" android:name="com.pwr.sailapp.ui.main.RentMasterFragment"
               android:label="fragment_rent_master" tools:layout="@layout/fragment_rent_master">
         <action android:id="@+id/action_destination_rent_master_to_destination_rent_details"
@@ -38,4 +43,24 @@
     <action android:id="@+id/action_global_destination_profile" app:destination="@id/destination_profile"
             app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    <fragment
+        android:id="@+id/cruiseFragment"
+        android:name="com.pwr.sailapp.ui.main.CruiseFragment"
+        android:label="fragment_cruise"
+        tools:layout="@layout/fragment_cruise" >
+        <action
+            android:id="@+id/action_cruiseFragment_to_cameraActivity"
+            app:destination="@id/cameraActivity"
+            app:popUpTo="@+id/cruiseFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/cameraActivity"
+        android:name="com.pwr.sailapp.ui.main.CameraActivity"
+        android:label="activity_camera"
+        tools:layout="@layout/activity_camera" />
+    <fragment
+        android:id="@+id/telephonyFragment"
+        android:name="com.pwr.sailapp.ui.main.TelephonyFragment"
+        android:label="fragment_telephony"
+        tools:layout="@layout/fragment_telephony" />
 </navigation>

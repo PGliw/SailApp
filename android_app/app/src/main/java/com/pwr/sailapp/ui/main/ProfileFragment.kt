@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pwr.sailapp.R
 import com.pwr.sailapp.data.sail.CancelRentalStatus
@@ -65,13 +66,15 @@ class ProfileFragment : MainScopedFragment() {
        fragmentManager.let { cancelRentalDialog.show(it!!, "Cancel dialog") }
        */
         mainViewModel.isCancellationAllowed = true
+        mainViewModel.rentalToCancel = rental
+        findNavController().navigate(R.id.action_destination_profile_to_telephonyFragment)
 
-        runBlocking {
-            changeLoadingBarVisibility(true)
-            withContext(Dispatchers.IO) { mainViewModel.cancelRental(rental.ID) }
-            withContext(Dispatchers.IO) { mainViewModel.fetchUpcomingRentals() }
-            changeLoadingBarVisibility(false)
-        }
+//        runBlocking {
+//            changeLoadingBarVisibility(true)
+//            withContext(Dispatchers.IO) { mainViewModel.cancelRental(rental.ID) }
+//            withContext(Dispatchers.IO) { mainViewModel.fetchUpcomingRentals() }
+//            changeLoadingBarVisibility(false)
+//        }
 
     }
 

@@ -85,4 +85,23 @@
     <string name="status_denied">Status: Denied</string>
     <string name="status_waiting">Status: Waiting for confirmation</string>
     <string name="quantity">Quantity</string>
+    <string name="lightness_level">Lightness Level</string>
+    <string name="no_light_sensor">No light sensor</string>
+    <string name="cruise_mode">Cruise mode</string>
+    <string name="acceleration">Acceleration</string>
+    <string name="x_axis">X axis:</string>
+    <string name="y_axis">Y axis</string>
+    <string name="z_axis">Z axis:</string>
+    <string name="no_camera">Camera not found</string>
+    <string name="no_camera_permission">No camera permission</string>
+    <string name="no_storage_permission">No storage permission</string>
+    <string name="no_telephony_permission">No telephony permission</string>
+    <string name="no_sms_permission">No SMS permission</string>
+    <string name="photo_done">Photo done</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="telephony">Telephony</string>
+    <string name="message">Message</string>
+    <string name="cancellation_message">Sorry, but I must cancel my reservation.</string>
+    <string name="incorrect_number">Incorrect number</string>
+    <string name="no_rental_selected">No rental selected</string>
 </resources>

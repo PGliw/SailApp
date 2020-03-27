@@ -3,7 +3,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/action_global_destination_profile"
-            android:title="@string/my_profile"/>
+            android:title="@string/my_profile" />
         <item
             android:id="@+id/action_global_destination_rent_master"
             android:title="@string/sail_now" />
@@ -14,9 +14,18 @@
             android:id="@+id/action_global_destination_settings"
             android:title="@string/settings" />
         <item
+            android:id="@+id/cruiseFragment"
+            android:title="@string/cruise_mode" />
+
+        <item
+            android:id="@+id/telephonyFragment"
+            android:title="@string/telephony" />
+
+        <item
             android:id="@+id/destination_logout"
-            android:title="@string/log_out"
-             />
+            android:title="@string/log_out" />
+
+
     </group>
 
 </menu>
